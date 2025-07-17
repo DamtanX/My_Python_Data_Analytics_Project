@@ -175,7 +175,7 @@ plt.show()
 ## 5_What are the trends in skill demand for Data Analysts?
 To analyze skill trends for Data Analysts in 2023, I filtered job postings for data analyst roles and grouped the listed skills by the month they were posted. This allowed me to identify the top 5 skills for each month, revealing how the demand for specific skills evolved throughout the year.
 
-Check my notebook here: [DA_Skills_Trend.ipynb](My_DA_Project/2023_DA_Skills_Trend.ipynb)
+Check my notebook here: [DA_Skills_Trend.ipynb](My_DA_Project/DA_Skills_Trend.ipynb)
 
 ### Plotting graph
 (main part of code)
