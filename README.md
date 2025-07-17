@@ -292,9 +292,9 @@ plt.show()
 ### Insights
 • Python offers one of the highest median salaries (~$98K) and appears in ~30% of postings—great balance of demand and pay.
 
-• SQL is the most requested skill (~57%), with a strong salary (~$92K), making it a must-have.
+• SQL is the most requested skill (57%), with a strong salary (~$92K), making it a must-have.
 
-• Excel is very common (~45%) but tied to a lower salary (~$84K)—good to know, but not high-paying.
+• Excel is very common (45%) but tied to a lower salary (~$84K)—good to know, but not high-paying.
 
 # What I Learned
 
