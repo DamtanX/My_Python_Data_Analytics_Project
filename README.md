@@ -72,7 +72,7 @@ df_US = df[df['job_country']=='United States']
 ## 1_How many Data Analyst positions are available across the United States?
 To determine the number of Data Analyst positions by location, I first filter the DataFrame to include only rows where the job title is "Data Analyst" and the country is the United States.
 
-Take a look at my notebook here: [EDA_Intro.ipynb](My_DA_Project\EDA_Intro.ipynb)
+Take a look at my notebook here: [EDA_Intro.ipynb](My_DA_Project/EDA_Intro.ipynb)
 ### Plotting Bar Chart
 (not polished)
 ```python
@@ -81,7 +81,7 @@ sns.barplot(data=df_plot, x='count', y=df_plot.index, hue='count', palette='dark
 plt.show()
 ```
 ### Bar Chart
-![DA_locations](My_DA_Project\pictures\DA_locations.png)
+![DA_locations](My_DA_Project/pictures/DA_locations.png)
 
 ### Insights
 • Remote jobs ("Anywhere") dominate the market, offering the most flexibility and the highest number of openings.
@@ -93,7 +93,7 @@ plt.show()
 ## 2_What are the three main types of workplaces or facilities where Data Analysts are typically employed?
 This section builds on the previously filtered data but uses a different data, visualized through three pie charts. These charts provide insights into job postings by showing the distribution of workplace facilities—such as remote work availability, health insurance offerings, and degree requirements.
 
-Have a look at my Jupiter notebook here: [EDA_Intro.ipynb](My_DA_Project\EDA_Intro.ipynb)
+Have a look at my Jupiter notebook here: [EDA_Intro.ipynb](My_DA_Project/EDA_Intro.ipynb)
 ### Plotting Pie Charts
 ```python
 fig, ax = plt.subplots(1, 3)
@@ -109,7 +109,7 @@ for i, (column, title) in enumerate(job_dict.items()):
 plt.show()
 ```
 ### Pie Charts
-![job_facilities](My_DA_Project\pictures\job_facilities.png)
+![job_facilities](My_DA_Project/pictures/job_facilities.png)
 
 ### Insights
 • Work from Home is Rare – Only 7.5% of data analyst jobs offer remote work.
@@ -121,7 +121,7 @@ plt.show()
 ## 3_Which companies are the most common or desirable employers for Data Analysts?
 This section is also based on the initial-prepared dataset, but here I focused on company names and the number of Data Analyst employees they have. I created and labeled the graph properly for clarity.
 
-If you're interested in reviewing the code, please refer to it: [EDA_Intro.ipynb](My_DA_Project\EDA_Intro.ipynb)
+If you're interested in reviewing the code, please refer to it: [EDA_Intro.ipynb](My_DA_Project/EDA_Intro.ipynb)
 
 ### Plotting Bar Chart
 ```python
@@ -138,7 +138,7 @@ plt.legend().set_visible(False)
 plt.show()
 ```
 ### Bar Chart
-![DA_company](My_DA_Project\pictures\companies_for_DA.png)
+![DA_company](My_DA_Project/pictures/companies_for_DA.png)
 ### Insights
 • Remote roles dominate – “Anywhere” has the highest job count, indicating strong remote opportunities for Data Analysts.
 
@@ -150,7 +150,7 @@ plt.show()
 ## 4_What are the Most Demanded Skills for the Top 3 most Popular Data Roles in the US?
 To identify the most in-demand skills for the top three most popular data roles, I first filtered the dataset to find the most frequently listed positions. Then, I extracted the top five skills associated with each of these roles. This analysis highlights the most common job titles and their key skills, helping me understand which abilities to focus on depending on the role I aim to pursue.
 
-See my Jupiter notebook with algorithm here: [Skill_Demand.ipynb](My_DA_Project\Skill_Demand.ipynb)
+See my Jupiter notebook with algorithm here: [Skill_Demand.ipynb](My_DA_Project/Skill_Demand.ipynb)
 
 ### Plotting Graph
 [key part]
@@ -164,7 +164,7 @@ for i, title in enumerate(job_titles):
 plt.show()
 ```
 ### Bar Chart
-![Visualization of Top 5 skills for Data Jobs](My_DA_Project\pictures\top5_skills_Data_jobs.png)
+![Visualization of Top 5 skills for Data Jobs](My_DA_Project/pictures/top5_skills_Data_jobs.png)
 ### Insights
 • SQL appears in the top 2 skills for all three roles, with the highest demand for Data Engineers (68%) and Data Analysts (51%).
 
@@ -175,7 +175,7 @@ plt.show()
 ## 5_What are the trends in skill demand for Data Analysts?
 To analyze skill trends for Data Analysts in 2023, I filtered job postings for data analyst roles and grouped the listed skills by the month they were posted. This allowed me to identify the top 5 skills for each month, revealing how the demand for specific skills evolved throughout the year.
 
-Check my notebook here: [DA_Skills_Trend.ipynb](My_DA_Project\2023_DA_Skills_Trend.ipynb)
+Check my notebook here: [DA_Skills_Trend.ipynb](My_DA_Project/DA_Skills_Trend.ipynb)
 
 ### Plotting graph
 (main part of code)
@@ -191,7 +191,7 @@ plt.show()
 ```
 ### Graph
 
-![2023_DA_Skills_Trend_graph](My_DA_Project\pictures\2023DAskillsTREND.png)
+![2023_DA_Skills_Trend_graph](My_DA_Project/pictures/2023DAskillsTREND.png)
 
 ### Insights
 
@@ -208,7 +208,7 @@ plt.show()
 
 To identify the highest-paying roles, I focused exclusively on US-based data jobs and analyzed their median salaries. I started by examining the salary distribution of common roles—such as Data Scientist, Data Engineer, and Data Analyst—to understand which positions tend to offer the highest pay.
 
-See my notebook here: [Salary_Analysis.ipynb](My_DA_Project\Salary_Analysis.ipynb)
+See my notebook here: [Salary_Analysis.ipynb](My_DA_Project/Salary_Analysis.ipynb)
 
 ### Plotting graph
 
@@ -222,7 +222,7 @@ plt.show()
 ```
 ### Box Chart
 
-![Salary_Analisys](My_DA_Project\pictures\salary_an.png)
+![Salary_Analisys](My_DA_Project/pictures/salary_an.png)
 
 ### Insights
 1. Senior Roles Pay Significantly More
@@ -237,7 +237,7 @@ All roles, especially Data Scientist and Data Engineer, show a wide range of sal
 ## 7_What is the median salary for the highest-paying and most in-demand skills for Data Analysts?
 This time, I focused solely on Data Analyst positions in the U.S. I separated each skill individually and calculated the median salary for each one, along with the number of postings that required it. To visualize the results, I used a previously created table, highlighting both the skills with the highest median salaries and the most frequently listed skills.
 
-Take a look at my notebook here: [Salary_Analysis.ipynb](My_DA_Project\Salary_Analysis.ipynb)
+Take a look at my notebook here: [Salary_Analysis.ipynb](My_DA_Project/Salary_Analysis.ipynb)
 
 ### Plotting graph
 
@@ -258,7 +258,7 @@ plt.show()
 ```
 
 ### Bar Chart
-![Salary_Analisys2](My_DA_Project\pictures\DAskillSalary.png)
+![Salary_Analisys2](My_DA_Project/pictures/DAskillSalary.png)
 
 ### Insights
 
@@ -288,13 +288,13 @@ plt.tight_layout()
 plt.show()
 ```
 ### Scatter Graph
-![Top Relevant Skills for DA](My_DA_Project\pictures\most_relevant_skills_for_da.png)
+![Top Relevant Skills for DA](My_DA_Project/pictures/most_relevant_skills_for_da.png)
 ### Insights
 • Python offers one of the highest median salaries (~$98K) and appears in ~30% of postings—great balance of demand and pay.
 
-• SQL is the most requested skill (~57%), with a strong salary (~$92K), making it a must-have.
+• SQL is the most requested skill (57%), with a strong salary (~$92K), making it a must-have.
 
-• Excel is very common (~45%) but tied to a lower salary (~$84K)—good to know, but not high-paying.
+• Excel is very common (45%) but tied to a lower salary (~$84K)—good to know, but not high-paying.
 
 # What I Learned
 
